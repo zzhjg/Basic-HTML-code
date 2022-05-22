@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table border="1px" cellspacing="0" >
+			<col width="100px">
+			<col width="100px">
+			<col width="100px">
+			<col width="100px">
+			<col width="100px">
+			<col width="100px">
+			<col width="200px">
+		<!--tr*6>td*7+tab键
+			td替换成th加粗并水平居中
+			<colgroup span=“6” width=“100px”>前六列宽度为100
+			<colgroup span="1" width="200px">后一列宽度为200
+		-->
+		<!--align：属性值有center，left，right规定表格相对周围元素的对齐方式-->
+		<!--跨行合并：rowspan=“合并单元格个数”，最上侧单元格为目标单元格，写合并代码
+			跨列合并：colspan=“合并单元格个数”，最左侧单元格为目标单元格，写合并代码
+		    <!-- 合并单元格步骤：
+                                 1.先确定跨行还是跨列
+                                 2. 找到目标单元格，写上合并方式=合并单元格数量
+                                 3.删除多余的单元格-->
+		    -->
+		<tr align="center" height="40px">
+			<td colspan="7" >个人简历</td>
+		</tr>
+		<tr align="center" height="40px">
+			<td>姓名</td>
+			<td></td>
+			<td>性别</td>
+			<td></td>
+			<td>年龄</td>
+			<td></td>
+			<td rowspan="4">照片</td>
+		</tr>
+		<tr align="center" height="40px">
+			<td>学历</td>
+			<td></td>
+			<td>籍贯</td>
+			<td colspan="3"></td>
+			
+		</tr>
+		<tr align="center" height="40px">
+			<td>电话</td>
+			<td></td>
+			<td>政治面貌</td>
+			
+			<td colspan="3"></td>
+			
+			
+		</tr>
+		<tr align="center" height="40px">
+			<td>毕业院校</td>
+			<td colspan="5"></td>
+			
+			
+		</tr>
+		<tr align="center" height="40px">
+			<td>求职意向</td>
+			<td colspan="6"></td>
+			
+		</tr>
+	</body>
+</html>

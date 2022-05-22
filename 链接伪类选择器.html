@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 未访问的链接a：link 把没有点击过的链接选出来*/
+        a:link {
+            color: cornflowerblue;
+            text-decoration: none;
+        }
+
+        /* 访问过的链接a：visited */
+        a:visited {
+            color: crimson;
+        }
+
+        /* 选择鼠标经过的链接a：hover */
+        a:hover {
+            color: darkkhaki;
+        }
+
+        /* a:avtive选择的是我们鼠标正在按下没有弹起的那个链接 */
+        a:active {
+            color: darkorange;
+        }
+
+        /* 链接伪类注意事项：1.为了确保生效，请按照LVHA的顺序进行声明：link->visited->hover->active
+                            2.因为链接在浏览器中具有默认的颜色，所以实际工作中都需要给链接单独指定样式 */
+        /* input:focus伪类选择器用于选取获得焦点的表单元素 */
+        input:focus {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">哈科技发挥科技</a>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+</body>
+
+</html>
